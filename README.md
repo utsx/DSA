@@ -12,12 +12,9 @@ Lab for Data streaming analysis
   {
   "imei": "UUID",
   "timestamp": "2025-01-22T12:34:56.789Z",
-  "longitude": 55.5555,
-  "latitude": 23.2321,
+  "speedLimit" doouble,
   "speed": 80.32,
   "acceleration": 0.5,
-  "engine_temperature": 90.5,
-  "battery_level": 85.0,
   "tire_pressure": {
     "front_left": 32.0,
     "front_right": 32.5,
@@ -29,8 +26,6 @@ Lab for Data streaming analysis
     "yAxis": 0.05,
     "zAxis": 0.07
   },
-  "fuel_level": 60.0,
-  "odometer": 12005.7,
   "engine_rpm": 3000,
   "pedal_force": {
     "accelerator": 70.0,
