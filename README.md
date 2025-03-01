@@ -12,7 +12,7 @@ Lab for Data streaming analysis
   {
   "imei": "UUID",
   "timestamp": "2025-01-22T12:34:56.789Z",
-  "speedLimit" doouble,
+  "speedLimit" 80,
   "speed": 80.32,
   "acceleration": 0.5,
   "tire_pressure": {
