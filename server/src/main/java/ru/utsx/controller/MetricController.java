@@ -1,5 +1,7 @@
 package ru.utsx.controller;
 
+import java.util.concurrent.CompletableFuture;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
