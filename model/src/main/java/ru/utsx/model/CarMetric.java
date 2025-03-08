@@ -1,7 +1,6 @@
 package ru.utsx.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.time.Instant;
 import lombok.Builder;
 import lombok.Data;
 
@@ -13,7 +12,7 @@ public class CarMetric {
     private String imei;
 
     @JsonProperty("timestamp")
-    private Instant timestamp;
+    private String timestamp;
 
     @JsonProperty("speedLimit")
     private int speedLimit;
