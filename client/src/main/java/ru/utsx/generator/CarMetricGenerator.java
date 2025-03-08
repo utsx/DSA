@@ -38,7 +38,7 @@ public class CarMetricGenerator {
                 .build();
 
         return CarMetric.builder()
-                .timestamp(Instant.now().plusSeconds(random.nextInt(10000)))
+                .timestamp(Instant.now().plusSeconds(random.nextInt(10000)).toString())
                 .speedLimit(faker.number().numberBetween(50, 120))
                 .speed(faker.number().randomDouble(2, 0, 120))
                 .acceleration(faker.number().randomDouble(2, -5, 5))

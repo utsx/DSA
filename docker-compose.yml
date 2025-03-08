@@ -61,7 +61,6 @@ services:
       - server
     networks:
       - network
-
   car_2:
     image: 'client'
     build:
@@ -76,7 +75,6 @@ services:
       - server
     networks:
       - network
-
   car_3:
     image: 'client'
     build:
