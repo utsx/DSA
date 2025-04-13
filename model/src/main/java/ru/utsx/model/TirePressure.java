@@ -1,22 +1,31 @@
 package ru.utsx.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-@Data
+@Getter
 @Builder
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonRootName("tirePressure")
 public class TirePressure {
 
-    @JsonProperty("front_left")
+    @JsonProperty("frontLeft")
     private double frontLeft;
 
-    @JsonProperty("front_right")
+    @JsonProperty("frontRight")
     private double frontRight;
 
-    @JsonProperty("rear_left")
+    @JsonProperty("rearLeft")
     private double rearLeft;
 
-    @JsonProperty("rear_right")
+    @JsonProperty("rearRight")
     private double rearRight;
 }

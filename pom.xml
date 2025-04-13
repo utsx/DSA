@@ -21,6 +21,10 @@
         <module>client</module>
         <module>server</module>
         <module>model</module>
+        <module>aggregator</module>
+        <module>external-api</module>
+        <module>redis-common</module>
+        <module>data-transfer</module>
     </modules>
 
 
