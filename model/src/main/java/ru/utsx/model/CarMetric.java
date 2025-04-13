@@ -1,11 +1,22 @@
 package ru.utsx.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
+@Setter
+@Getter
 @Builder
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonRootName("carMetric")
 public class CarMetric {
 
     @JsonProperty("imei")
@@ -23,15 +34,15 @@ public class CarMetric {
     @JsonProperty("acceleration")
     private double acceleration;
 
-    @JsonProperty("tire_pressure")
+    @JsonProperty("tirePressure")
     private TirePressure tirePressure;
 
-    @JsonProperty("axis_deviation")
+    @JsonProperty("axisDeviation")
     private AxisDeviation axisDeviation;
 
-    @JsonProperty("engine_rpm")
+    @JsonProperty("engineRpm")
     private int engineRpm;
 
-    @JsonProperty("pedal_force")
+    @JsonProperty("pedalForce")
     private PedalForce pedalForce;
 }

@@ -1,0 +1,8 @@
+FROM maven:3.9.9-eclipse-temurin-21 AS build
+WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
+FROM eclipse-temurin:21-jre
+COPY --from=build /app/external-api/target/external-api-1.0-SNAPSHOT.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "--add-opens", "java.base/java.util=ALL-UNNAMED", "-jar", "/app.jar"]
